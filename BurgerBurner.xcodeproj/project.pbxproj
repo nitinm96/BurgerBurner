@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47C1240729D5F22A008CE5D9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 47C1240629D5F22A008CE5D9 /* GoogleService-Info.plist */; };
+		47C1240A29D5F2AD008CE5D9 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 47C1240929D5F2AD008CE5D9 /* FirebaseAnalytics */; };
+		47C1240C29D5F2AD008CE5D9 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 47C1240B29D5F2AD008CE5D9 /* FirebaseFirestore */; };
 		A9F50D4829D1F0470043C4D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F50D4729D1F0470043C4D5 /* AppDelegate.swift */; };
 		A9F50D4A29D1F0470043C4D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F50D4929D1F0470043C4D5 /* SceneDelegate.swift */; };
 		A9F50D4C29D1F0470043C4D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F50D4B29D1F0470043C4D5 /* ViewController.swift */; };
@@ -16,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47C1240629D5F22A008CE5D9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A9F50D4429D1F0470043C4D5 /* BurgerBurner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BurgerBurner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9F50D4729D1F0470043C4D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9F50D4929D1F0470043C4D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47C1240A29D5F2AD008CE5D9 /* FirebaseAnalytics in Frameworks */,
+				47C1240C29D5F2AD008CE5D9 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +62,7 @@
 		A9F50D4629D1F0470043C4D5 /* BurgerBurner */ = {
 			isa = PBXGroup;
 			children = (
+				47C1240629D5F22A008CE5D9 /* GoogleService-Info.plist */,
 				A9F50D4729D1F0470043C4D5 /* AppDelegate.swift */,
 				A9F50D4929D1F0470043C4D5 /* SceneDelegate.swift */,
 				A9F50D4B29D1F0470043C4D5 /* ViewController.swift */,
@@ -83,6 +90,10 @@
 			dependencies = (
 			);
 			name = BurgerBurner;
+			packageProductDependencies = (
+				47C1240929D5F2AD008CE5D9 /* FirebaseAnalytics */,
+				47C1240B29D5F2AD008CE5D9 /* FirebaseFirestore */,
+			);
 			productName = BurgerBurner;
 			productReference = A9F50D4429D1F0470043C4D5 /* BurgerBurner.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,9 @@
 				Base,
 			);
 			mainGroup = A9F50D3B29D1F0470043C4D5;
+			packageReferences = (
+				47C1240829D5F2AD008CE5D9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = A9F50D4529D1F0470043C4D5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9F50D5429D1F0480043C4D5 /* LaunchScreen.storyboard in Resources */,
+				47C1240729D5F22A008CE5D9 /* GoogleService-Info.plist in Resources */,
 				A9F50D5129D1F0480043C4D5 /* Assets.xcassets in Resources */,
 				A9F50D4F29D1F0470043C4D5 /* Main.storyboard in Resources */,
 			);
@@ -360,6 +375,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		47C1240829D5F2AD008CE5D9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		47C1240929D5F2AD008CE5D9 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 47C1240829D5F2AD008CE5D9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		47C1240B29D5F2AD008CE5D9 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 47C1240829D5F2AD008CE5D9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A9F50D3C29D1F0470043C4D5 /* Project object */;
 }
