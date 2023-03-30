@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Hello Bitches");
+        print("Hello Nitin");
         // Do any additional setup after loading the view.
                 
         // Add a new document in collection "cities" *********Write test for DB******* Working
