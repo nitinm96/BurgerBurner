@@ -30,8 +30,12 @@ class ViewController: UIViewController {
 //                print("Document successfully written!")
 //            }
 //        }
+       
     }
-
-
+    @IBAction func Start(_ sender: Any) {
+        let sb : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let nvc = sb.instantiateViewController(withIdentifier: "HomeView") as! HomeViewController
+        self.present(nvc, animated: true, completion: nil)
+    }
 }
 
