@@ -24,6 +24,7 @@
 		47C1242629D68B51008CE5D9 /* background2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 47C1242529D68B51008CE5D9 /* background2.jpeg */; };
 		47C1242829D68EA0008CE5D9 /* background3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 47C1242729D68EA0008CE5D9 /* background3.jpeg */; };
 		47C1242A29D690A4008CE5D9 /* background4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 47C1242929D690A4008CE5D9 /* background4.jpeg */; };
+		47C1242C29D69583008CE5D9 /* background5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 47C1242B29D69583008CE5D9 /* background5.jpeg */; };
 		A9F50D4829D1F0470043C4D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F50D4729D1F0470043C4D5 /* AppDelegate.swift */; };
 		A9F50D4A29D1F0470043C4D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F50D4929D1F0470043C4D5 /* SceneDelegate.swift */; };
 		A9F50D4C29D1F0470043C4D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F50D4B29D1F0470043C4D5 /* ViewController.swift */; };
@@ -48,6 +49,7 @@
 		47C1242529D68B51008CE5D9 /* background2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background2.jpeg; sourceTree = "<group>"; };
 		47C1242729D68EA0008CE5D9 /* background3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background3.jpeg; sourceTree = "<group>"; };
 		47C1242929D690A4008CE5D9 /* background4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background4.jpeg; sourceTree = "<group>"; };
+		47C1242B29D69583008CE5D9 /* background5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background5.jpeg; sourceTree = "<group>"; };
 		A9F50D4429D1F0470043C4D5 /* BurgerBurner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BurgerBurner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9F50D4729D1F0470043C4D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9F50D4929D1F0470043C4D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				47C1241329D6452E008CE5D9 /* dashboard.png */,
 				47C1242729D68EA0008CE5D9 /* background3.jpeg */,
 				47C1241029D6452E008CE5D9 /* fitness.png */,
+				47C1242B29D69583008CE5D9 /* background5.jpeg */,
 				47C1242529D68B51008CE5D9 /* background2.jpeg */,
 				47C1242929D690A4008CE5D9 /* background4.jpeg */,
 				47C1241F29D67F4A008CE5D9 /* whopper.png */,
@@ -190,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47C1242229D6805C008CE5D9 /* fish.png in Resources */,
+				47C1242C29D69583008CE5D9 /* background5.jpeg in Resources */,
 				47C1241729D6452E008CE5D9 /* dashboard.png in Resources */,
 				47C1241E29D67DD2008CE5D9 /* splash2.jpeg in Resources */,
 				47C1242A29D690A4008CE5D9 /* background4.jpeg in Resources */,
