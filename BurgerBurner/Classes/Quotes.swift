@@ -18,7 +18,14 @@ class Quote : Decodable {
 class Api : ObservableObject{
 
     func loadData(completion:@escaping ([Quote]) -> ()) {
-        let query = "health".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+        
+        //randomly select category
+        let categories = ["inspirational", "health", "fitness"]
+        let randomCategory = categories.randomElement() ?? "fitness";
+        print("Quote Category: \(randomCategory)")
+        
+        //call api to get quote
+        let query = randomCategory.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
         let url = URL(string: "https://api.api-ninjas.com/v1/quotes?category=" + query!)!
         var request = URLRequest(url: url)
         request.setValue("EEQmYqWs3KUhBP6tGFjbsw==9hEQ00nnaJ7mJzNd", forHTTPHeaderField: "X-Api-Key")
