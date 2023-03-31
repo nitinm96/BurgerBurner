@@ -12,11 +12,36 @@ import FirebaseFirestore
 class ViewController: UIViewController {
 
     let db = Firestore.firestore()
+    let mainDelegate = UIApplication.shared.delegate as! AppDelegate;
     
+    var quotesText : String!;
+    var quoteLengthLimit = 100;
+    @IBOutlet var quotesLabel : UILabel!;
+
+    
+    func getQuotes() {
+        
+        Api().loadData() { (quotes: [BurgerBurner.Quote]) in
+            for q in quotes
+            {
+                self.quotesText = q.quote;
+            }
+            
+            //check if quote length is less than (quoteLengthLimit) characters
+            if self.quotesText.count <= self.quoteLengthLimit
+            {
+                self.quotesLabel.text = self.quotesText;
+
+            }else{
+                self.getQuotes()
+            }
+        }
+    }
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Hello Bitches");
-        print("Hello Nitin");
+        getQuotes()
         // Do any additional setup after loading the view.
                 
         // Add a new document in collection "cities" *********Write test for DB******* Working

@@ -10,6 +10,7 @@
 		47C1240729D5F22A008CE5D9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 47C1240629D5F22A008CE5D9 /* GoogleService-Info.plist */; };
 		47C1240A29D5F2AD008CE5D9 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 47C1240929D5F2AD008CE5D9 /* FirebaseAnalytics */; };
 		47C1240C29D5F2AD008CE5D9 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 47C1240B29D5F2AD008CE5D9 /* FirebaseFirestore */; };
+		A9E4DE0629D7549800274221 /* Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E4DE0529D7549800274221 /* Quotes.swift */; };
 		A9F50D4829D1F0470043C4D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F50D4729D1F0470043C4D5 /* AppDelegate.swift */; };
 		A9F50D4A29D1F0470043C4D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F50D4929D1F0470043C4D5 /* SceneDelegate.swift */; };
 		A9F50D4C29D1F0470043C4D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F50D4B29D1F0470043C4D5 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		47C1240629D5F22A008CE5D9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A9E4DE0529D7549800274221 /* Quotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quotes.swift; sourceTree = "<group>"; };
 		A9F50D4429D1F0470043C4D5 /* BurgerBurner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BurgerBurner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9F50D4729D1F0470043C4D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9F50D4929D1F0470043C4D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A9E4DE0429D7548700274221 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A9E4DE0529D7549800274221 /* Quotes.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		A9F50D3B29D1F0470043C4D5 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +72,7 @@
 		A9F50D4629D1F0470043C4D5 /* BurgerBurner */ = {
 			isa = PBXGroup;
 			children = (
+				A9E4DE0429D7548700274221 /* Classes */,
 				47C1240629D5F22A008CE5D9 /* GoogleService-Info.plist */,
 				A9F50D4729D1F0470043C4D5 /* AppDelegate.swift */,
 				A9F50D4929D1F0470043C4D5 /* SceneDelegate.swift */,
@@ -153,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9E4DE0629D7549800274221 /* Quotes.swift in Sources */,
 				A9F50D4C29D1F0470043C4D5 /* ViewController.swift in Sources */,
 				A9F50D4829D1F0470043C4D5 /* AppDelegate.swift in Sources */,
 				A9F50D4A29D1F0470043C4D5 /* SceneDelegate.swift in Sources */,
