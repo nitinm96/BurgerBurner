@@ -8,6 +8,7 @@
 import UIKit
 import Foundation
 import FirebaseFirestore
+import FirebaseAuth
 
 class ViewController: UIViewController {
 
@@ -30,12 +31,27 @@ class ViewController: UIViewController {
 //                print("Document successfully written!")
 //            }
 //        }
-       
     }
-    @IBAction func Start(_ sender: Any) {
-        let sb : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let nvc = sb.instantiateViewController(withIdentifier: "HomeView") as! HomeViewController
-        self.present(nvc, animated: true, completion: nil)
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.checkAuth()
+    }
+    
+
+    public func checkAuth() {
+        if Auth.auth().currentUser == nil {
+            // go to sign in screen
+            let sb : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let nvc = sb.instantiateViewController(withIdentifier: "SignIn") as! LoginViewController
+            self.present(nvc, animated: true, completion: nil)
+            print("1")
+        } else {
+            // go to home screen
+            let sb : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let nvc = sb.instantiateViewController(withIdentifier: "HomeView") as! HomeViewController
+            self.present(nvc, animated: true, completion: nil)
+            print("2")
+        }
     }
 }
 
