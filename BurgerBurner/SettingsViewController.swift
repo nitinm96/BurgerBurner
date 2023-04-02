@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class SettingsViewController: UIViewController {
 
@@ -54,6 +55,10 @@ class SettingsViewController: UIViewController {
         LogOut.addGestureRecognizer(gR6)
         LogOut.isUserInteractionEnabled = true
 
+        // Change Password gesture controller setup
+        let gR7 = UITapGestureRecognizer(target: self, action: #selector(self.handleResetPasswordTap))
+        ChangePassword.addGestureRecognizer(gR7)
+        ChangePassword.isUserInteractionEnabled = true
     }
     
     // Edit Profile Btn method
@@ -102,6 +107,12 @@ class SettingsViewController: UIViewController {
                 }
         }
     
+    // Change/reset password Btn method
+    @objc func handleResetPasswordTap(sender : UIGestureRecognizer) {
+        let sb : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let nvc = sb.instantiateViewController(withIdentifier: "Help") as! HelpViewController
+        self.present(nvc, animated: true, completion: nil)
+    }
 
     
     

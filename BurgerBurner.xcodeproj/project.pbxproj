@@ -39,6 +39,7 @@
 		47C1244629D8131F008CE5D9 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C1244529D8131E008CE5D9 /* SignUpViewController.swift */; };
 		47C1244829D82DAC008CE5D9 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C1244729D82DAC008CE5D9 /* Validator.swift */; };
 		47C1244A29D8CFAA008CE5D9 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C1244929D8CFAA008CE5D9 /* AlertManager.swift */; };
+		47C1244C29D915F7008CE5D9 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C1244B29D915F7008CE5D9 /* ForgotPasswordViewController.swift */; };
 		A9F50D4829D1F0470043C4D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F50D4729D1F0470043C4D5 /* AppDelegate.swift */; };
 		A9F50D4A29D1F0470043C4D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F50D4929D1F0470043C4D5 /* SceneDelegate.swift */; };
 		A9F50D4C29D1F0470043C4D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F50D4B29D1F0470043C4D5 /* ViewController.swift */; };
@@ -77,6 +78,7 @@
 		47C1244529D8131E008CE5D9 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		47C1244729D82DAC008CE5D9 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		47C1244929D8CFAA008CE5D9 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		47C1244B29D915F7008CE5D9 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		A9F50D4429D1F0470043C4D5 /* BurgerBurner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BurgerBurner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9F50D4729D1F0470043C4D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9F50D4929D1F0470043C4D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				47C1243929D80551008CE5D9 /* AuthService.swift */,
 				47C1244529D8131E008CE5D9 /* SignUpViewController.swift */,
 				47C1244929D8CFAA008CE5D9 /* AlertManager.swift */,
+				47C1244B29D915F7008CE5D9 /* ForgotPasswordViewController.swift */,
 			);
 			path = BurgerBurner;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				47C1244629D8131F008CE5D9 /* SignUpViewController.swift in Sources */,
 				A9F50D4A29D1F0470043C4D5 /* SceneDelegate.swift in Sources */,
 				47C1242E29D7EE52008CE5D9 /* SettingsViewController.swift in Sources */,
+				47C1244C29D915F7008CE5D9 /* ForgotPasswordViewController.swift in Sources */,
 				47C1244229D80DC5008CE5D9 /* LoginUserRequest.swift in Sources */,
 				47C1240E29D643AD008CE5D9 /* HomeViewController.swift in Sources */,
 				47C1243829D7F38F008CE5D9 /* HelpViewController.swift in Sources */,

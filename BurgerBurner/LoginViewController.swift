@@ -15,6 +15,12 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var password: UITextField!
     
+    @IBOutlet weak var forgotPassword: UILabel!
+    
+    @IBAction func unwindToSignInViewController(segue: UIStoryboardSegue) {
+        //xxx
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,11 +29,22 @@ class LoginViewController: UIViewController {
         let gR1 = UITapGestureRecognizer(target: self, action: #selector(self.handleNewUserTap))
         NewUser.addGestureRecognizer(gR1)
         NewUser.isUserInteractionEnabled = true
+        
+        // Forgot Password gesture controller setup
+        let gR2 = UITapGestureRecognizer(target: self, action: #selector(self.handleForgotPasswordTap))
+        forgotPassword.addGestureRecognizer(gR2)
+        forgotPassword.isUserInteractionEnabled = true
     }
     
     @objc func handleNewUserTap(sender : UIGestureRecognizer) {
         let sb : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let nvc = sb.instantiateViewController(withIdentifier: "SignUp") as! SignUpViewController
+        self.present(nvc, animated: true, completion: nil)
+    }
+    
+    @objc func handleForgotPasswordTap(sender : UIGestureRecognizer) {
+        let sb : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let nvc = sb.instantiateViewController(withIdentifier: "ForgotPassword") as! ForgotPasswordViewController
         self.present(nvc, animated: true, completion: nil)
     }
     

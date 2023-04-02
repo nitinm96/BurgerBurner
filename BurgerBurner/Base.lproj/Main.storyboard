@@ -107,6 +107,7 @@
                     <connections>
                         <outlet property="NewUser" destination="r2u-Of-So7" id="Sdl-Oo-Mlf"/>
                         <outlet property="email" destination="ID5-OR-xLI" id="iRA-9w-BXc"/>
+                        <outlet property="forgotPassword" destination="AwT-mB-bfl" id="mGq-W7-a4b"/>
                         <outlet property="password" destination="4yj-pq-AK5" id="jmc-wc-EzS"/>
                     </connections>
                 </viewController>
@@ -853,6 +854,83 @@
                 <exit id="2M0-VS-Tky" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4024.7663551401865" y="108.85529157667388"/>
+        </scene>
+        <!--Forgot Password View Controller-->
+        <scene sceneID="bId-sp-9Q2">
+            <objects>
+                <viewController storyboardIdentifier="ForgotPassword" id="Ny0-4k-OE1" customClass="ForgotPasswordViewController" customModule="BurgerBurner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2sg-ml-WaM">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="On3-Hw-TDE">
+                                <rect key="frame" x="0.0" y="37" width="428" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="wgM-y8-V5z"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Forgot Password" id="FZR-cS-lJV">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" image="arrowshape.turn.up.backward.fill" catalog="system" id="qn1-7u-lqE">
+                                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <segue destination="Ltm-ug-gXa" kind="unwind" unwindAction="unwindToSignInViewControllerWithSegue:" id="vT7-g1-7LE"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Enter Associated Email Address" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="na9-PV-9hh">
+                                <rect key="frame" x="50" y="151" width="329" height="51"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4vZ-hA-P8B">
+                                <rect key="frame" x="50" y="240" width="329" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="gfR-9O-ict"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pdk-Z0-XHY">
+                                <rect key="frame" x="156" y="324" width="116" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="eGi-pd-QmI"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Send"/>
+                                <connections>
+                                    <action selector="SendPasswordReset:" destination="Ny0-4k-OE1" eventType="touchUpInside" id="QKc-mD-Pta"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hvG-K2-W42"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4vZ-hA-P8B" firstAttribute="top" secondItem="na9-PV-9hh" secondAttribute="bottom" constant="38" id="0O0-gC-ALP"/>
+                            <constraint firstItem="na9-PV-9hh" firstAttribute="leading" secondItem="hvG-K2-W42" secondAttribute="leading" constant="50" id="4WO-sk-WNr"/>
+                            <constraint firstItem="na9-PV-9hh" firstAttribute="trailing" secondItem="4vZ-hA-P8B" secondAttribute="trailing" id="F0l-Q8-QWb"/>
+                            <constraint firstItem="On3-Hw-TDE" firstAttribute="leading" secondItem="hvG-K2-W42" secondAttribute="leading" id="KEP-7H-m4s"/>
+                            <constraint firstItem="Pdk-Z0-XHY" firstAttribute="top" secondItem="4vZ-hA-P8B" secondAttribute="bottom" constant="50" id="Ldm-JG-Ymg"/>
+                            <constraint firstItem="On3-Hw-TDE" firstAttribute="top" secondItem="2sg-ml-WaM" secondAttribute="topMargin" constant="-7" id="Nrf-HZ-2Nv"/>
+                            <constraint firstItem="Pdk-Z0-XHY" firstAttribute="leading" secondItem="hvG-K2-W42" secondAttribute="leading" constant="156" id="U8b-Ij-PDw"/>
+                            <constraint firstItem="On3-Hw-TDE" firstAttribute="centerX" secondItem="na9-PV-9hh" secondAttribute="centerX" id="aRL-Yd-5ib"/>
+                            <constraint firstItem="On3-Hw-TDE" firstAttribute="centerX" secondItem="2sg-ml-WaM" secondAttribute="centerX" id="iVX-bk-Xag"/>
+                            <constraint firstItem="na9-PV-9hh" firstAttribute="top" secondItem="On3-Hw-TDE" secondAttribute="bottom" constant="70" id="k9s-0C-WLg"/>
+                            <constraint firstItem="4vZ-hA-P8B" firstAttribute="centerX" secondItem="Pdk-Z0-XHY" secondAttribute="centerX" id="n7F-Uu-CGF"/>
+                            <constraint firstItem="hvG-K2-W42" firstAttribute="bottom" secondItem="Pdk-Z0-XHY" secondAttribute="bottom" constant="528" id="pXU-0b-7aP"/>
+                            <constraint firstItem="na9-PV-9hh" firstAttribute="leading" secondItem="4vZ-hA-P8B" secondAttribute="leading" id="vf1-ra-biv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailField" destination="4vZ-hA-P8B" id="vPt-xT-KIP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9AP-My-yxC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Ltm-ug-gXa" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="138.78504672897196" y="788.55291576673869"/>
         </scene>
     </scenes>
     <resources>
