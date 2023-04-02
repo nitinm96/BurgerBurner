@@ -40,6 +40,7 @@
 		47C1244829D82DAC008CE5D9 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C1244729D82DAC008CE5D9 /* Validator.swift */; };
 		47C1244A29D8CFAA008CE5D9 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C1244929D8CFAA008CE5D9 /* AlertManager.swift */; };
 		47C1244C29D915F7008CE5D9 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C1244B29D915F7008CE5D9 /* ForgotPasswordViewController.swift */; };
+		47C1244E29D9201A008CE5D9 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C1244D29D9201A008CE5D9 /* ChangePasswordViewController.swift */; };
 		A9F50D4829D1F0470043C4D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F50D4729D1F0470043C4D5 /* AppDelegate.swift */; };
 		A9F50D4A29D1F0470043C4D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F50D4929D1F0470043C4D5 /* SceneDelegate.swift */; };
 		A9F50D4C29D1F0470043C4D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F50D4B29D1F0470043C4D5 /* ViewController.swift */; };
@@ -79,6 +80,7 @@
 		47C1244729D82DAC008CE5D9 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		47C1244929D8CFAA008CE5D9 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 		47C1244B29D915F7008CE5D9 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		47C1244D29D9201A008CE5D9 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
 		A9F50D4429D1F0470043C4D5 /* BurgerBurner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BurgerBurner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9F50D4729D1F0470043C4D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9F50D4929D1F0470043C4D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 				47C1244529D8131E008CE5D9 /* SignUpViewController.swift */,
 				47C1244929D8CFAA008CE5D9 /* AlertManager.swift */,
 				47C1244B29D915F7008CE5D9 /* ForgotPasswordViewController.swift */,
+				47C1244D29D9201A008CE5D9 /* ChangePasswordViewController.swift */,
 			);
 			path = BurgerBurner;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				47C1244429D80FAB008CE5D9 /* LoginViewController.swift in Sources */,
 				A9F50D4C29D1F0470043C4D5 /* ViewController.swift in Sources */,
 				47C1243D29D80664008CE5D9 /* RegisterUserRequest.swift in Sources */,
+				47C1244E29D9201A008CE5D9 /* ChangePasswordViewController.swift in Sources */,
 				47C1243629D7F324008CE5D9 /* AboutUsViewController.swift in Sources */,
 				A9F50D4829D1F0470043C4D5 /* AppDelegate.swift in Sources */,
 				47C1243229D7F20F008CE5D9 /* MyGoalsViewController.swift in Sources */,

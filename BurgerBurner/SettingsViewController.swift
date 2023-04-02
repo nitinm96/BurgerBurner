@@ -59,6 +59,11 @@ class SettingsViewController: UIViewController {
         let gR7 = UITapGestureRecognizer(target: self, action: #selector(self.handleResetPasswordTap))
         ChangePassword.addGestureRecognizer(gR7)
         ChangePassword.isUserInteractionEnabled = true
+        
+        // Delete Account gesture controller setup
+        let gR8 = UITapGestureRecognizer(target: self, action: #selector(self.handleDeleteAccountTap))
+        DeleteAccount.addGestureRecognizer(gR8)
+        DeleteAccount.isUserInteractionEnabled = true
     }
     
     // Edit Profile Btn method
@@ -107,11 +112,16 @@ class SettingsViewController: UIViewController {
                 }
         }
     
-    // Change/reset password Btn method
+    // Change password Btn method
     @objc func handleResetPasswordTap(sender : UIGestureRecognizer) {
         let sb : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let nvc = sb.instantiateViewController(withIdentifier: "Help") as! HelpViewController
+        let nvc = sb.instantiateViewController(withIdentifier: "ChangePassword") as! ChangePasswordViewController
         self.present(nvc, animated: true, completion: nil)
+    }
+    
+    // Change password Btn method
+    @objc func handleDeleteAccountTap(sender : UIGestureRecognizer) {
+        AlertManager.showDeleteConfirmation(on: self)
     }
 
     
